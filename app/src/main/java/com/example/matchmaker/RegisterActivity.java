@@ -48,6 +48,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void saveUserData() {
+
         if(validateRegister()){
 
             //Guardar usuari i contrassenya
@@ -57,6 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
             {
                 error_text_register.setVisibility(View.INVISIBLE);
             }
+
             moveToAccessActivity();
         }else{
             error_text_register.setVisibility(View.VISIBLE);
@@ -69,6 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
         editor.putString(getString(R.string.saved_user), register_user.getText().toString());
         editor.putString(getString(R.string.saved_password), register_password.getText().toString());
         editor.commit();
+        editor.apply();
     }
 
     private boolean validateRegister() {

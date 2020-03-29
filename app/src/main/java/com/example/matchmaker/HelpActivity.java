@@ -7,6 +7,7 @@ import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.text.method.ScrollingMovementMethod;
 
 public class HelpActivity extends Activity {
 
@@ -29,6 +30,8 @@ public class HelpActivity extends Activity {
                 moveToAccessActivity();
             }
         });
+
+        description.setMovementMethod(new ScrollingMovementMethod());
     }
 
     private void moveToAccessActivity() {

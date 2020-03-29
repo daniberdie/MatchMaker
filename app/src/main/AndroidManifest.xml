@@ -29,8 +29,10 @@
             android:value="@string/google_maps_key" />
 
 
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity"
+                  android:label="@string/Register"></activity>
+        <activity android:name=".LoginActivity"
+                  android:label="@string/Login"/>
         <activity
             android:name=".HelpActivity"
             android:label="@string/title_activity_help" />

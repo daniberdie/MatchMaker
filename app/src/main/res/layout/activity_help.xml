@@ -49,16 +49,11 @@
             android:gravity="center_horizontal">
 
         </TextView>
-
-        <ScrollView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_centerInParent="true">
-
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
 
                 <TextView
                     android:id="@+id/description"
@@ -72,7 +67,5 @@
                     android:gravity="center_horizontal"
                     tools:ignore="RtlCompat" />
             </LinearLayout>
-
-        </ScrollView>
     </RelativeLayout>
 </LinearLayout>
