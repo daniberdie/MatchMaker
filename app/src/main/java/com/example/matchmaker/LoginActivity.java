@@ -45,10 +45,8 @@ public class LoginActivity extends AppCompatActivity {
 
         if(validateLogin(this)){
             //TODO: Mantenir sessió iniciada
-            //Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-            //startActivity(intent);
-            Toast toast = Toast.makeText(this,"CORRECTE", Toast.LENGTH_LONG);
-            toast.show();
+            Intent intent = new Intent(LoginActivity.this, CreateMatchActivity.class);
+            startActivity(intent);
         }else{
             Toast toast = Toast.makeText(this,getString(R.string.invalid_user_pass), Toast.LENGTH_LONG);
             toast.show();
@@ -59,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private boolean validateLogin(Context context) {
 
-        boolean ret = false;
+        boolean ret = true;
 
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.shared_preferences), Context.MODE_PRIVATE);
         String default_user = sharedPref.getString(getString(R.string.saved_user),"admin");
