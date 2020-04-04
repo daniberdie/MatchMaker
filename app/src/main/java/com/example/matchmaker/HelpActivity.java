@@ -27,14 +27,10 @@ public class HelpActivity extends Activity {
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToAccessActivity();
+                finish();
             }
         });
 
         description.setMovementMethod(new ScrollingMovementMethod());
-    }
-
-    private void moveToAccessActivity() {
-        finish();
     }
 }

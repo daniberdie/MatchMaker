@@ -7,6 +7,7 @@
     <string name="Login">Accedir</string>
     <string name="Register">Registrar</string>
     <string name="Access">Pantalla accés</string>
+    <string name="Initial">Pantalla inici</string>
 
     //Pantalla ajuda
     <string name="title_activity_help">Ajuda</string>
@@ -41,4 +42,10 @@
     <string name="mid_level">Mig</string>
     <string name="high_level">Alt</string>
     <string name="all_level">Tots</string>
+
+    //Menu
+    <string name="CreateMatch">Crear partit</string>
+    <string name="NextMatch">Propers partits</string>
+    <string name="Statistics">Estadístiques</string>
+    <string name="Map">Localitzar partits</string>
 </resources>

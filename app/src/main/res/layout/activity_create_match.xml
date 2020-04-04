@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_createMatch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
@@ -60,7 +61,7 @@
             android:layout_height="wrap_content"
             android:text="@string/description"
             android:textSize="25dp"
-            android:textColor="#000"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_alignBaseline="@id/description_editText"></TextView>
 
@@ -90,7 +91,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ubi"
             android:textSize="25dp"
-            android:textColor="#000"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_alignBaseline="@+id/ubication_editText"></TextView>
 
@@ -120,7 +121,7 @@
             android:layout_height="wrap_content"
             android:text="@string/date"
             android:textSize="25dp"
-            android:textColor="#000"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_alignBaseline="@+id/date_editText"></TextView>
         <Space
@@ -148,7 +149,7 @@
             android:layout_height="wrap_content"
             android:text="@string/time"
             android:textSize="25dp"
-            android:textColor="#000"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_alignBaseline="@+id/time_editText"></TextView>
         <Space
@@ -191,7 +192,7 @@
             android:layout_height="wrap_content"
             android:text="@string/level"
             android:textSize="25dp"
-            android:textColor="#000"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_alignBaseline="@+id/level_editText"></TextView>
 
@@ -222,7 +223,7 @@
             android:layout_height="wrap_content"
             android:text="@string/players"
             android:textSize="25dp"
-            android:textColor="#000"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_alignBaseline="@+id/players_editText"></TextView>
 

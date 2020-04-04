@@ -42,6 +42,12 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
+            android:name=".InitialActivity"
+            android:label="@string/Initial"/>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/Initial"/>
+        <activity
             android:name=".AccesActivity"
             android:label="@string/Access">
             <intent-filter>

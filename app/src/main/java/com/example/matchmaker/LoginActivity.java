@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(validateLogin(this)){
             //TODO: Mantenir sessió iniciada
-            Intent intent = new Intent(LoginActivity.this, CreateMatchActivity.class);
+            Intent intent = new Intent(LoginActivity.this, InitialActivity.class);
             startActivity(intent);
         }else{
             Toast toast = Toast.makeText(this,getString(R.string.invalid_user_pass), Toast.LENGTH_LONG);

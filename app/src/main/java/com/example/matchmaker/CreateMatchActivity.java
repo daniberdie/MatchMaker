@@ -12,8 +12,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 
@@ -27,6 +29,7 @@ public class CreateMatchActivity extends AppCompatActivity {
     private Spinner level_spinner;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private TimePickerDialog.OnTimeSetListener mTimeSetListener;
+    private Button buttonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,23 @@ public class CreateMatchActivity extends AppCompatActivity {
         time_editText = findViewById(R.id.time_editText);
         level_spinner = findViewById(R.id.level_spinner);
         players_editText = findViewById(R.id.players_editText);
+
+        buttonBack = findViewById(R.id.back_button_main);
+
+        LinearLayout layout = (LinearLayout) findViewById(R.id.activity_createMatch);
+
+        if(getIntent().getStringExtra("sport").equals("fut"))
+        {
+            layout.setBackground(getResources().getDrawable(R.drawable.football));
+        }
+        else if(getIntent().getStringExtra("sport").equals("bas"))
+        {
+            layout.setBackground(getResources().getDrawable(R.drawable.basket));
+        }
+        else if(getIntent().getStringExtra("sport").equals("pad"))
+        {
+            layout.setBackground(getResources().getDrawable(R.drawable.padel_initial));
+        }
 
         String [] level_options = {getString(R.string.all_level),getString(R.string.low_level),getString(R.string.mid_level),getString(R.string.high_level)};
 
@@ -58,6 +78,14 @@ public class CreateMatchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 displayClock();
+            }
+        });
+
+        //Back Button
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
