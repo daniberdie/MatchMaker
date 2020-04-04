@@ -8,6 +8,8 @@
     <string name="Register">Registrar</string>
     <string name="Access">Pantalla accés</string>
     <string name="Initial">Pantalla inici</string>
+    <string name="remember_pref">remember_preferences</string>
+    <string name="remember_user">remember_user</string>
 
     //Pantalla ajuda
     <string name="title_activity_help">Ajuda</string>
@@ -42,10 +44,18 @@
     <string name="mid_level">Mig</string>
     <string name="high_level">Alt</string>
     <string name="all_level">Tots</string>
+    <string name="empty_fields">Camps anteriors incomplets</string>
+    <string name="max_players">El nombre de jugadors no pot ser superior a 40</string>
+    <string name="match_shared_data">match_shared_data</string>
+    <string name="saved_data">data</string>
+
 
     //Menu
     <string name="CreateMatch">Crear partit</string>
     <string name="NextMatch">Propers partits</string>
     <string name="Statistics">Estadístiques</string>
     <string name="Map">Localitzar partits</string>
+
+    //Info partit
+    <string name="exit">finalitzar</string>
 </resources>

@@ -1,7 +1,9 @@
 package com.example.matchmaker;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +11,7 @@ import android.widget.Button;
 public class AccesActivity extends Activity {
 
     private Button help_button, login_button, register_button;
+    private boolean remember_user;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,8 +48,19 @@ public class AccesActivity extends Activity {
     }
 
     private void moveToLoginActivity() {
-        Intent intent = new Intent(AccesActivity.this, LoginActivity.class);
-        startActivity(intent);
+        getRememverUserValue(this);
+        if(remember_user){
+            Intent intent_initial = new Intent(AccesActivity.this, InitialActivity.class);
+            startActivity(intent_initial);
+        } else {
+            Intent intent_login = new Intent(AccesActivity.this, LoginActivity.class);
+            startActivity(intent_login);
+        }
+    }
+
+    private void getRememverUserValue(Context context) {
+        SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.remember_pref), Context.MODE_PRIVATE);
+        remember_user = sharedPref.getBoolean(getString(R.string.remember_user),false);
     }
 
     private void moveToHelpActivity() {

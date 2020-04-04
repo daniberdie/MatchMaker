@@ -44,7 +44,7 @@
             android:textAlignment="center"
             android:text="@string/App_Welcome"
             android:textSize="30dp"
-            android:textColor="#FFAE38"
+            android:textColor="#FFF"
             android:textStyle="bold"
             android:gravity="center_horizontal">
 
